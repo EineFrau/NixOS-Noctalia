@@ -1,0 +1,34 @@
+{
+  config,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
+    nasm
+    nodejs
+    python3
+    pyright
+    python313Packages.pip
+    cargo
+    cmake
+    go
+    delve
+    go-tools
+    gnumake
+    raylib
+    cli11
+    ftxui
+    openssl
+    pkg-config
+    vcpkg
+    typescript
+    rustc
+    wayland
+    wayland-protocols
+    wlroots
+    meson
+    mesa
+    ninja
+    libinput
+  ];
+}
